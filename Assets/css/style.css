@@ -103,7 +103,7 @@ p {
     flex-wrap:wrap;
     align-items:center;
     position:relative;
-    flex: 1 1 80%
+    flex: 1 1 100%
 }
 
 .imagebox img {
@@ -124,6 +124,37 @@ p {
     opacity: 50%;
 }
 
+.imagebox1 {
+    display:flex;
+    padding: 10px;
+    flex-direction:row;
+    flex:70%;
+    border: 10px solid olivedrab;
+    margin: 10px;
+    flex-wrap:wrap;
+    align-items:center;
+    position:relative;
+    flex: 1 1 200%;
+}
+
+.imagebox1 img {
+    width:100%
+}
+
+.imagebox1 h3 {
+    color: white;
+    text-align:center;
+    position:absolute;
+    font-size:18px;
+    flex-wrap:wrap;
+    display:inline-block;
+}
+
+.imagebox1:hover {
+    border: 10px solid lightblue;
+    opacity: 50%;
+}
+
 .prework {
     display:inline-block;
     background-image:url(/Assets/Images/motherboardwork.jpeg);
@@ -132,22 +163,20 @@ p {
 .contact-me {
     margin-right: 30px;
     float:right;
-    font-size: 18px;
+    font-size: 36px;
     padding-top:10px;
-    
 }
 
-.contact-meul {
+.contact-me ul {
    list-style-type:none;
 }
 
 .contact-me ul li {
     display: inline-block;
-    margin-left: 30px;
 }
 
 .contact-me a {
-    color:antiquewhite;
+    color:olivedrab;
     text-decoration: none;
 }
 
@@ -157,25 +186,23 @@ p {
     max-height:200px;
     max-width:150px;
     flex: 1 1 200px;
-    border: solid olivedrab
+    border: 10px solid olivedrab
 }
 
 footer {
+    display:flex;
+    flex-wrap:wrap;
     background-color:olivedrab;
     color: antiquewhite;
     text-align: center;
     border: none;
     justify-content: center;
-    text-align:center;
-
 }
-.footer h2 {
-    border:none;
 
-}
 
 @media screen and (max-width: 768px){
-    main,nav {
-        flex-direction: column;
+    *{
+        width:100%;
+        
     }
 }
