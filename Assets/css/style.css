@@ -27,21 +27,26 @@ h2 {
    
 }
 
-nav {
+.top {
     margin-right: 30px;
     float:right;
     font-size: 18px;
     padding-top:10px;
+    
 }
 
-nav ul {
-   
+.top ul {
+   list-style-type:none;
 }
 
-nav ul li {
+.top ul li {
     display: inline-block;
     margin-left: 30px;
-    
+}
+
+.top a {
+    color:antiquewhite;
+    text-decoration: none;
 }
 
 .nh {
@@ -51,10 +56,6 @@ nav ul li {
     background-image:url(../Images/nhyard.jpg);
     background-position: center;
     background-size: cover;
-}
-
-a {
-
 }
 
 
@@ -72,6 +73,32 @@ p {
     border-left:5px solid black;
     padding: 20px;
     flex:70%;
+}
+
+.about-me {
+
+}
+
+.work {
+
+}
+
+.work ul li a:hover{
+    background:transparent;
+}
+
+.prework {
+    display:inline-block;
+    background-image:url(/Assets/Images/motherboardwork.jpeg);
+}
+
+.contact-me {
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
 }
 
 footer {
