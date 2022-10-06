@@ -12,6 +12,7 @@ header {
     background-color:olivedrab;
     color:antiquewhite;
     padding:20px;
+    flex-wrap:wrap;
 }
 
 h1 {
@@ -24,6 +25,9 @@ h2 {
     display:inline-block;
     padding:15px;
     flex:30%;
+    border-right:5px solid black;
+    min-width: 200px;
+    flex: 1 1 300px;
    
 }
 
@@ -69,22 +73,44 @@ article {
 }
 
 p {
-    display:inline-block;
-    border-left:5px solid black;
+    display:flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
     padding: 20px;
     flex:70%;
+    text-align:right;
 }
 
 .about-me {
-
+    display:flex;
+    flex:70%;
+    flex-direction: row
 }
 
-.work {
-
+.about-me img {
+    width: 50%;
 }
 
-.work ul li a:hover{
-    background:transparent;
+
+.imagebox {
+    display:flex;
+    padding: 10px;
+    flex-direction:row;
+    flex:70%;
+    border: 10px solid olivedrab;
+    margin: 10px;
+}
+
+.imagebox img {
+    width:100%
+}
+
+.imagebox p {
+    color: antiquewhite;
+}
+
+.imagebox:hover {
+    border: 10px solid lightblue;
+    opacity: 50%;
 }
 
 .prework {
@@ -93,25 +119,43 @@ p {
 }
 
 .contact-me {
-
+    margin-right: 30px;
+    float:right;
+    font-size: 18px;
+    padding-top:10px;
+    
 }
 
+.contact-me ul {
+    list-style-type:none;
+ }
+ 
+ .contact-me ul li {
+     display: inline-block;
+     margin-left: 30px;
+ }
+ 
+ .contact-me a {
+     color:antiquewhite;
+     text-decoration: none;
+ }
+
 .float-left {
-    float: left;
+    float: right;
     margin-right: 25px;
 }
 
 footer {
     background-color:olivedrab;
-    color:antiquewhite;
+    color: antiquewhite;
     text-align: center;
+    border: none;
 
 
 }
 
-
 @media screen and (max-width: 768px){
     main,nav {
-        flex-direction: row;
+        flex-direction: column;
     }
 }
