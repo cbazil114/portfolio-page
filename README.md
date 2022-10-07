@@ -40,10 +40,19 @@ In order of acceptance criteria:
 * This is a challenging category, but it is the one that most utilizes your flexbox knowledge. As far as navigation, please refer to the previous list item. 
 * The sizing is a challenge, but it is easy once you remember to use flex-basis. 
 * Using the anchor tag <a href>, you can plant a URL into an image. Using :hover, I was able to change the items whenever a user hovers over them. 
+*The responsive layout is interesting, in that you can add media screen functions in a multitude of ways. Since this webpage is simple, I want to make sure the width of boxes and images shrinks along with the page, so I includ width=100%. I also change the borders on the headers from the right to the bottom, so when everything is organized into columns, it looks a bit more presentable. 
 
 
 ## Screenshot
 
+Here is the screenshot of the deployed webpage.
+
+![Portfolio Page Screenshot](./Assets/Images/_Users_connorbazil_Desktop_portfolio-page_index.html%20(1).png)
+
 ## Link
 
+The deployed application can be accessed here: https://cbazil114.github.io/portfolio-page/
+
 ## Credits
+
+* Credits to the learning assistants who helped me along the way!

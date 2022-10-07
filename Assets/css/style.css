@@ -56,6 +56,7 @@ nav {
 .top a {
     color:antiquewhite;
     text-decoration: none;
+    background-color:olivedrab;
 }
 
 .nh {
@@ -165,6 +166,9 @@ p {
     float:right;
     font-size: 36px;
     padding-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+   
 }
 
 .contact-me ul {
@@ -178,11 +182,12 @@ p {
 .contact-me a {
     color:olivedrab;
     text-decoration: none;
+
 }
 
 .connor {
     float: right;
-    margin-right: 25px;
+    margin: 25px;
     max-height:200px;
     max-width:150px;
     flex: 1 1 200px;
@@ -201,8 +206,13 @@ footer {
 
 
 @media screen and (max-width: 768px){
-    *{
+    * {
         width:100%;
+        flex-direction:column;
         
+    }
+    h2 {
+        border-right: none;
+        border-bottom: solid olivedrab;
     }
 }
